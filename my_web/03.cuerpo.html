@@ -9,7 +9,7 @@
 
 		<title>Estructura de la cabecera</title>
 
-		<link rel="icon" href="/home/sconejer/Documentos/repo_git/html5_css/Material_apoyo/img/icono.png">
+		<link rel="icon" href="img/icono.png">
 
 	
 	</head>
@@ -50,7 +50,7 @@
 
 		<figure>
 		<!-- <figure> para ordenar las imagens -->
-		<img src="/home/sconejer/Documentos/repo_git/html5_css/Material_apoyo/img/imagen.jpg">
+		<img src="img/imagen.jpg">
 		<!-- <img> para visualizar imagenes y necesita el parámetro "src" para indicar la ruta de la imagen -->
 		</figure>
 		<figcaption>Pie de página a la imagen</figcaption>
@@ -117,6 +117,30 @@
 		<p>Febrero: <progress value="60" min="0" max="100"></progress></p>
 		<p>Marzo: <progress value="85" min="0" max="100"></progress></p>
 		<p>Abril: <progress value="45" min="0" max="100"></progress></p>
+
+
+		<audio autoplay controls loop preload="auto">
+		<!-- <audio> etiqueta para utilizar archivos de audio en html5. Esta etiqueta puede tener atributos como:
+			- autoplay: Reproducirá automáticamente la música
+			- controls: Mostrará los controles para el audio
+			- loop: Reproducirá indefinidamente el audio
+		Estos valores son booleanos (true, false) en el momento de nombrarlos se está inicializando (true) 
+
+			- preload: pregarca el archivo de audio al abrir la página, puede tener los siguientes valores:
+				- auto: Valor por defecto, precarga el audio al abrir la página.
+				- metadata: El navegador precarga el archivo cuando se de "play".
+				- none: No precarga el archivo de audio.
+		
+		Formatos de archivos de audio admitidos:
+			- .ogg
+			- .mp3
+			- .wav
+			- ACC: .m4a, .m4b, .m4p, .mp4, .acc -->
+			<source src="audio/audio.m4a" type="audio/mp4">
+			<source src="audio/audio.mp3" type="audio/mp3">	
+			<source src="audio/audio.ogg" type="audio/ogg">
+			<!-- Dependiendo del tipo de navegador es el audio que se reproducirá por defecto. En el ejemplo se especifican tres audios pero si se abre con Mozilla por defecto usará audio.ogg -->
+		</audio>
 
 		<footer>Este es el pie de la página</footer>
 		<!-- <footer> Pie de página -->
