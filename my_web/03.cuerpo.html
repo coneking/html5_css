@@ -142,6 +142,21 @@
 			<!-- Dependiendo del tipo de navegador es el audio que se reproducirá por defecto. En el ejemplo se especifican tres audios pero si se abre con Mozilla por defecto usará audio.ogg -->
 		</audio>
 
+
+		<video autoplay controls loop width="500" height="200">
+			<!-- <video> etiqueta para usar archivos de video, tiene los mismos parámetros de la etiqueta <audio> pero además se puede operar el ancho y alto del video.
+				- width: Ancho del video
+				- height: Alto del video  
+			
+			Formatos de archivos de audio admitidos:
+				- .ogv
+				- .mp4
+				- .webm -->
+			<source src="video/video.mp4" type="video/mp4">
+			<source src="video/video.ogv" type="video/ogv">
+			<source src="video/video.webm" type="video/webm">
+		</video>
+
 		<footer>Este es el pie de la página</footer>
 		<!-- <footer> Pie de página -->
 	</body>
