@@ -16,6 +16,75 @@
 
 	<body>
 
+		<center><h3>Formulario</h3>
+		<!-- <center> centra cualquier ojeto del html5; un párrafo, un título, un formulario, etc -->
+
+			<form>
+			<!-- <form> es una etiqueta que permite crear formularios para que el usuario interactue enviando información, comentarios, etc -->
+				<label for="texto">Entrada de texto</label>
+				<!-- <label> es una etiqueta para referenciar algún objeto de la página, por ejemplo un "input". Para que la referencia funcione se debe agregar el parámetro "for" buscará el nombre de un id de un objeto-->
+				<input id="texto" type="text" placeholder="Entrada de texto" value="" required="">
+				<!-- <input> Permite la interacción del usuario ingresando información, posee algunos parámetros como:
+					- type: Es el tipo de entrada a usar, ejem "text", "email", "button", "submit"... más info https://www.w3schools.com/html/html_form_input_types.asp
+
+					- placeholder: Un texto preescrito para guíar al usuario
+					- value: Es un parámetro que guardará lo que se ingrese en el input, por defecto está vacío 
+					- readonly: Es un parámetro que bloquea la entrada de información
+					- id: Nombre único 
+					- required: Indica que este input no puede estar vacío -->
+
+				<br>
+				<br>
+
+				<label for="correo">Entrada de correo</label>
+				<input id="correo" type="email" placeholder="Entrada de correo" value="" required="">
+
+				<br>
+				<br>
+
+				<label for="pass">Entrada de contraseña</label>
+				<input id="pass" type="password" placeholder="Entrada de correo" value="" required="">
+
+				<br>
+				<br>
+
+				<input type="number" value="1" min="0" max="20">
+
+				<br>
+				<br>
+
+				<select>
+				<!-- <select> etiqueta para crear seleciones múltiples. Las opciones se configuran con la etiqueta <option> -->
+					<option>Opción 1</option>
+					<option>Opción 2</option>
+					<option>Opción 3</option>
+				</select>
+
+				<br>
+				<br>
+
+				<input type="checkbox" id="rojo"><label for="rojo">Rojo</label>
+				<input type="checkbox" id="amarillo"><label for="amarillo">Amarillo</label>
+				<input type="checkbox" id="verde"><label for="verde">Verde</label>
+
+
+				<br>
+				<br>
+
+				<input type="radio" id="blanco" name="radio" checked=""><label for="blanco">Blanco</label>
+				<input type="radio" id="negro" name="radio"><label for="negro">Negro</label>
+				<!-- En este ejemplo se crean dos botones de tipo "radio" y para que no sean de selección múltiple, se agrega el parámetro "name" con el mismo valor, de esa forma no se podrán seleccionar más de uno.
+					<checked> se utiliza para marcar una opción del radio de forma predeterminada -->
+
+				<br>
+				<br>
+
+				<input type="submit" value="Enviar Formulario">
+				<!-- el parámetro "submit" se utiliza para enviar el formulario y "value" es el nombre del botón. Si queremos que el formulario se envíe sólo cuando los campos anteriores estén completados, cada input debe tener agregado el parámetro "required" -->
+
+			</form>
+		</center>
+
 		<header>
 			<div id="logotipo">Logotipo</div>
 			<!-- <div> es una etiqueta que permite dividir la estructura de la página, se puede para crear "cajas" que no tiene por defecto html5, por ejemplo existe la caja <header> pero si queremos crear una nueva usamos <div> seguido de un identificados "id" -->
@@ -128,7 +197,7 @@
 		<p>Abril: <progress value="45" min="0" max="100"></progress></p>
 
 
-		<audio autoplay controls loop preload="auto">
+		<audio autoplay controls loop preload="none">
 		<!-- <audio> etiqueta para utilizar archivos de audio en html5. Esta etiqueta puede tener atributos como:
 			- autoplay: Reproducirá automáticamente la música
 			- controls: Mostrará los controles para el audio
