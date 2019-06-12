@@ -1,0 +1,47 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Sintaxis CSS</title>
+
+	<style>
+		/* Selector puede ser el nombre de la etiqueta, el id, la clase o su atributo. Ejemplo:
+			Selector{
+				propiedad:valor;
+			}
+		*/
+		body{
+			background: red;
+			/*cambiar el color del fondo del body*/
+		}
+
+		#caja{
+			/*Para dar estilo en base al "id" se usa # y el nombre del id */
+			width: 200px;
+			height: 200px;
+			background: yellow;
+		}
+
+		.grupo{
+			/*Para dar estilo a un grupo o clase se usa . seguido del nombre de la clase*/
+			width: 200px;
+			height: 200px;
+			background: blue;
+			margin: 10px;
+		}
+
+	</style>
+</head>
+
+
+<body>
+	<div id="caja"></div>
+	<!-- Creamos una nueva caja llamada "caja" -->
+
+	<div class="grupo"></div>
+	<!-- Usamos "class" para crear un grupo de cajas -->
+	<div class="grupo"></div>
+	<div class="grupo"></div>
+</body>
+</html>
