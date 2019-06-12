@@ -1,0 +1,46 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Propiedades de Color</title>
+
+	<style>
+		
+		.grupo{
+			/*Definimos las propiedades para las cajas de la clase "grupo"*/
+			width: 200px;
+			height: 200px;
+			margin: 20px;
+		}
+
+		#c1{
+			/*Definimos las propiedades para la caja c1*/
+			background: magenta;
+			/*Los colores pueden ir escritos en inglés o en hexadecimal. Dato: para ver los colores, podemos inspeccionar la página e ir al elemento con su color original, si editamos y le damos una letra, mostrará un listado de colores con esa letra*/
+
+		}
+
+		#c2{
+			background: #00ff00;
+			/*Información sobre colores https://www.w3schools.com/colors/colors_names.asp*/
+		}
+
+		#c3{
+			background: rgba(255,0,255,1.5);
+			/*Otra opción para colores es "rgba" donde r=red, g=gree, b=blue son valores que van desde el 0 al 255 y a="nivel de transparencia", 0=transparente, 1=sólido*/
+		}
+
+	</style>
+
+</head>
+
+<body>
+	<!--Creamos tres cajas con distinto nombre pero todas pertenecen a la misma clase "grupo"-->
+	<div id="c1" class="grupo"></div>
+	<div id="c2" class="grupo"></div>
+	<div id="c3" class="grupo"></div>
+
+
+</body>
+</html>
