@@ -8,13 +8,68 @@
 		*{
 		/*El marcador universal se identifica por un asterisco */
 			margin: 0;
+			/*Por defecto ya hay un margen asignado a las figuras, por lo que si se da el valor "0", se eliminará completamente*/
+			padding: 0;
+			list-style: none;
+
 		}
 
 		header{
+			position: relative;
+			/*position ayuda a ordenar las cajas; realtive*/
+			margin: 20px auto;
+			/*en el ejemplo la caja tendrá 20px de margen superior e infoerior y estará centrada (auto)*/
+			/*dependiendo de lo declarado en "position" se asignará el margen: "auto"*/
+			
+			/*margin además tiene valores que son en este orden "top", "right", "bottom" y "left". Por ejemplo si queremos que la caja esté a 20 pixeles niveles superior y 30 nivel lateral derecho sería: "margin 20px 30px"*/
+
+			/*si se quiere dar un margen igual para los cuatro puntos: "margin: 20px", esto quiere decir que serán 20px para todos los lados de la caja*/
+
+			/*si se quiere especificar el valor a uno de los puntos, por ejemplo al izquierdo; "margin: 0 0 0 20px" donde el último valor es "left"*/
+
+			/*otra forma de indicar el margen para algún punto sería "margin-top", "margin-right", "margin-bottom", "margin-left*/
+
 			width: 1000px;
 			height: 120px;
 			background: #444;
 		}
+
+		#logo{
+			position: absolute;
+			/*position absolute permitirá crear una caja dentro de otra*/
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			width: 200px;
+			height: 60px;
+			background: #ccc;
+		}
+
+		nav{
+			position: relative;
+			margin: auto;
+			width: 1000px;
+			height: 48px;
+			background: #aaa;
+		}
+
+		#top{
+			position: relative;
+			margin: 20px auto;
+			width: 1000px;
+			height: 192px;
+			background: #888;			
+		}
+
+		section{
+			position: relative;
+			margin: 20px auto;
+			width: 1000px;
+			height: 453px;
+			background: #aaa;
+		}
+
 	</style>
 </head>
 
